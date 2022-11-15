@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="code"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="E:/files/project/one_robot/code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="F:/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/files/project/one_robot/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="F:/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/files/project/one_robot/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/files/project/one_robot/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/files/project/one_robot/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="code.elf">
+				<Option output="E:/files/project/one_robot/code/cmake-build-debug/code.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/files/project/one_robot/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F103xB"/>
+					<Add directory="E:/files/project/one_robot/code/Core/Inc"/>
+					<Add directory="E:/files/project/one_robot/code/Core/eMPL"/>
+					<Add directory="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="E:/files/project/one_robot/code/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="E:/files/project/one_robot/code/Drivers/CMSIS/Include"/>
+					<Add directory="f:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="f:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="f:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="f:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="f:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="f:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="F:/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/files/project/one_robot/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 code.elf"/>
+					<CompileFile command="F:/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/files/project/one_robot/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/files/project/one_robot/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/files/project/one_robot/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="code.elf/fast">
+				<Option output="E:/files/project/one_robot/code/cmake-build-debug/code.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/files/project/one_robot/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F103xB"/>
+					<Add directory="E:/files/project/one_robot/code/Core/Inc"/>
+					<Add directory="E:/files/project/one_robot/code/Core/eMPL"/>
+					<Add directory="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="E:/files/project/one_robot/code/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="E:/files/project/one_robot/code/Drivers/CMSIS/Include"/>
+					<Add directory="f:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="f:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="f:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="f:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="f:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="f:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="F:/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/files/project/one_robot/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 code.elf/fast"/>
+					<CompileFile command="F:/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/files/project/one_robot/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/files/project/one_robot/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/files/project/one_robot/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/files/project/one_robot/code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="F:/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/files/project/one_robot/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="F:/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/files/project/one_robot/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/files/project/one_robot/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/files/project/one_robot/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/files/project/one_robot/code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="F:/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/files/project/one_robot/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="F:/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/files/project/one_robot/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/files/project/one_robot/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;E:/files/project/one_robot/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="E:/files/project/one_robot/code/Core/Inc/MPU6050.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Inc/UART.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Inc/adc.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Inc/bmp.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Inc/dma.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Inc/gpio.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Inc/main.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Inc/oled.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Inc/oledfont.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Inc/retarget.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Inc/stm32f1xx_hal_conf.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Inc/stm32f1xx_it.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Inc/tim.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Inc/u_iic.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Inc/usart.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Src/MPU6050.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Src/UART.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Src/adc.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Src/dma.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Src/gpio.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Src/main.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Src/oled.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Src/retarget.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Src/stm32f1xx_hal_msp.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Src/stm32f1xx_it.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Src/syscalls.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Src/system_stm32f1xx.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Src/tim.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Src/u_iic.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Src/usart.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/eMPL/dmpKey.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/eMPL/dmpmap.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/eMPL/inv_mpu.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/eMPL/inv_mpu.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/eMPL/inv_mpu_dmp_motion_driver.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/eMPL/inv_mpu_dmp_motion_driver.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Device/ST/STM32F1xx/License.md">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Include/cmsis_armclang.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Include/cmsis_compiler.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Include/cmsis_iccarm.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Include/cmsis_version.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Include/core_armv8mbl.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Include/core_armv8mml.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Include/core_cm1.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Include/core_cm23.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Include/core_cm33.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Include/mpu_armv7.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Include/mpu_armv8.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/CMSIS/LICENSE.txt">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/License.md">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/STM32F103C8Tx_FLASH.ld">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/startup/startup_stm32f103xb.s">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

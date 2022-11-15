@@ -1,0 +1,5 @@
+"F:\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S E:\files\project\one_robot\code -B E:\files\project\one_robot\code\cmake-build-debug
+-- Minimal optimization, debug info included
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/files/project/one_robot/code/cmake-build-debug
