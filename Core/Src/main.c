@@ -99,8 +99,6 @@ int main(void) {
     RetargetInit(&huart3);
     OLED_Init();
     OLED_Clear();
-    __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 100);
-
     HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
     HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
     HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4);
@@ -118,10 +116,8 @@ int main(void) {
 
         /* USER CODE BEGIN 3 */
         MPU_test();
-        Motor_Ctrl();
-        //var_Encode[1] = (uint32_t)(__HAL_TIM_GET_COUNTER(&htim2));
-        //vcan_sendware((uint8_t *)var_Encode, sizeof(var_Encode));
-        HAL_Delay(10);
+        Motor_test();
+
     }
     /* USER CODE END 3 */
 }

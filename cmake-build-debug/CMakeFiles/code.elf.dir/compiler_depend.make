@@ -277,7 +277,9 @@ CMakeFiles/code.elf.dir/Core/Src/debug.c.obj: ../Core/Src/debug.c \
   F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/_pthreadtypes.h \
   F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/sched.h \
   F:/gcc-arm-none-eabi/arm-none-eabi/include/machine/types.h \
-  F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/stdio.h
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
+  ../Core/Inc/Motor.h \
+  ../Core/Inc/tim.h
 
 CMakeFiles/code.elf.dir/Core/Src/dma.c.obj: ../Core/Src/dma.c \
   ../Core/Inc/dma.h \

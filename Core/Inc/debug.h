@@ -8,6 +8,10 @@
 #include "MPU6050.h"
 #include "inv_mpu.h"
 #include "UART.h"
+void get_key(void);
 void OLED_show(void );
+
+
 void MPU_test(void);
+void Motor_test(void);
 #endif //CODE_DEBUG_H
