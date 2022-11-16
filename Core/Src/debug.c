@@ -6,6 +6,7 @@
 #include "Motor.h"
 
 extern Motor_TypeDef Motor_Pitch;
+extern Motor_TypeDef Motor_Roll;
 
 void get_key(void) {
     if (HAL_GPIO_ReadPin(GPIOB, K3_Pin) == GPIO_PIN_RESET) {
@@ -60,6 +61,8 @@ void MPU_test(void) {
 void Motor_test(void)
 {
     Motor_Pitch.PWM=350;
+    Motor_Roll.PWM=500;
     get_key();
     Motor_Ctrl(&Motor_Pitch);
+    Motor_Ctrl(&Motor_Roll);
 }

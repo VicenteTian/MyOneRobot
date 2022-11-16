@@ -6,7 +6,7 @@
 #define CODE_MOTOR_H
 #include "tim.h"
 
-#define MAX_PWM_Duty 999//控制电机的最大占空比
+#define MAX_PWM_Duty 1000//控制电机的最大占空比
 
 #define MOTOR_ID_PITCH 0//俯仰轮电机ID号
 #define MOTOR_ID_ROLL 1//动量轮电机ID号
@@ -20,6 +20,6 @@ typedef struct
     uint16_t PWM;//电机转速，占空比，0~999
     uint16_t Encoder;//电机编码器的
 }Motor_TypeDef;
-
+void Motor_Init(void);
 void Motor_Ctrl(Motor_TypeDef *motor) ;
 #endif //CODE_MOTOR_H

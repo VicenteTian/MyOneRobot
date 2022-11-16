@@ -99,9 +99,7 @@ int main(void) {
     RetargetInit(&huart3);
     OLED_Init();
     OLED_Clear();
-    HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-    HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
-    HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4);
+    Motor_Init();
     //HAL_TIM_Encoder_Start(&htim3, TIM_CHANNEL_ALL);
     HAL_ADCEx_Calibration_Start(&hadc1);
     //HAL_ADC_Start_DMA(&hadc1, (uint32_t *) &var_Encode[0], 1);
@@ -169,7 +167,13 @@ void SystemClock_Config(void) {
 }
 
 /* USER CODE BEGIN 4 */
-
+void HAL_SYSTICK_Callback(void)
+{
+    __IO static uint16_t time_count = 0; // 时间计数，每1ms增加一(与滴答定时器频率有关)
+    // 每1ms自动增一
+    //time_count++;
+    //vcan_sendware((uint8_t *)&time_count, sizeof(time_count));
+}
 /* USER CODE END 4 */
 
 /**

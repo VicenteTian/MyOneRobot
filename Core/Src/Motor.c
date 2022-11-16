@@ -6,18 +6,22 @@
 
 Motor_TypeDef Motor_Pitch = {0};
 Motor_TypeDef Motor_Roll = {.Motor_ID=1};
-
+void Motor_Init(void)
+{
+    Motor_Pitch.PWM=0;
+    Motor_Roll.PWM=0;
+    HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+    HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
+    HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4);
+    Motor_Ctrl(&Motor_Pitch);
+    Motor_Ctrl(&Motor_Roll);
+    HAL_GPIO_WritePin(GPIOB, STBY_Pin | EN_Pin, GPIO_PIN_SET);//两个电机使能
+}
 void Motor_Ctrl(Motor_TypeDef *motor) {
     if (motor->PWM > MAX_PWM_Duty) {
         motor->PWM = MAX_PWM_Duty;
     }//检查电机设定的PWM占空比是否过大
-
     if (motor->Motor_ID == MOTOR_ID_PITCH) {
-        if (motor->Enable) {
-            HAL_GPIO_WritePin(GPIOB, STBY_Pin | Blue_Pin, GPIO_PIN_SET);
-        } else {
-            HAL_GPIO_WritePin(GPIOB, STBY_Pin | Blue_Pin, GPIO_PIN_RESET);
-        }
         if (motor->Dir) {
             HAL_GPIO_WritePin(GPIOA, Green_Pin, GPIO_PIN_RESET);
             __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_4, Motor_Pitch.PWM);
@@ -30,11 +34,6 @@ void Motor_Ctrl(Motor_TypeDef *motor) {
     }
 
     if (motor->Motor_ID == MOTOR_ID_ROLL) {
-        if (motor->Enable) {
-            HAL_GPIO_WritePin(GPIOB, EN_Pin, GPIO_PIN_SET);
-        } else {
-            HAL_GPIO_WritePin(GPIOB, EN_Pin, GPIO_PIN_RESET);
-        }
         if (motor->Dir) {
             HAL_GPIO_WritePin(GPIOB, DIR_Pin, GPIO_PIN_RESET);
         } else {
