@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/code.elf.dir/Core/Src/MPU6050.c.obj"
   "CMakeFiles/code.elf.dir/Core/Src/MPU6050.c.obj.d"
+  "CMakeFiles/code.elf.dir/Core/Src/N20Motor.c.obj"
+  "CMakeFiles/code.elf.dir/Core/Src/N20Motor.c.obj.d"
   "CMakeFiles/code.elf.dir/Core/Src/UART.c.obj"
   "CMakeFiles/code.elf.dir/Core/Src/UART.c.obj.d"
   "CMakeFiles/code.elf.dir/Core/Src/adc.c.obj"

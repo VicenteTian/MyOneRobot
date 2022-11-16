@@ -82,10 +82,24 @@ CMakeFiles/code.elf.dir/Core/Src/MPU6050.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code.elf.dir/Core/Src/MPU6050.c.s"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\files\project\one_robot\code\Core\Src\MPU6050.c -o CMakeFiles\code.elf.dir\Core\Src\MPU6050.c.s
 
+CMakeFiles/code.elf.dir/Core/Src/N20Motor.c.obj: CMakeFiles/code.elf.dir/flags.make
+CMakeFiles/code.elf.dir/Core/Src/N20Motor.c.obj: ../Core/Src/N20Motor.c
+CMakeFiles/code.elf.dir/Core/Src/N20Motor.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/code.elf.dir/Core/Src/N20Motor.c.obj"
+	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Core/Src/N20Motor.c.obj -MF CMakeFiles\code.elf.dir\Core\Src\N20Motor.c.obj.d -o CMakeFiles\code.elf.dir\Core\Src\N20Motor.c.obj -c E:\files\project\one_robot\code\Core\Src\N20Motor.c
+
+CMakeFiles/code.elf.dir/Core/Src/N20Motor.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code.elf.dir/Core/Src/N20Motor.c.i"
+	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\files\project\one_robot\code\Core\Src\N20Motor.c > CMakeFiles\code.elf.dir\Core\Src\N20Motor.c.i
+
+CMakeFiles/code.elf.dir/Core/Src/N20Motor.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code.elf.dir/Core/Src/N20Motor.c.s"
+	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\files\project\one_robot\code\Core\Src\N20Motor.c -o CMakeFiles\code.elf.dir\Core\Src\N20Motor.c.s
+
 CMakeFiles/code.elf.dir/Core/Src/UART.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Core/Src/UART.c.obj: ../Core/Src/UART.c
 CMakeFiles/code.elf.dir/Core/Src/UART.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/code.elf.dir/Core/Src/UART.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/code.elf.dir/Core/Src/UART.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Core/Src/UART.c.obj -MF CMakeFiles\code.elf.dir\Core\Src\UART.c.obj.d -o CMakeFiles\code.elf.dir\Core\Src\UART.c.obj -c E:\files\project\one_robot\code\Core\Src\UART.c
 
 CMakeFiles/code.elf.dir/Core/Src/UART.c.i: cmake_force
@@ -99,7 +113,7 @@ CMakeFiles/code.elf.dir/Core/Src/UART.c.s: cmake_force
 CMakeFiles/code.elf.dir/Core/Src/adc.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Core/Src/adc.c.obj: ../Core/Src/adc.c
 CMakeFiles/code.elf.dir/Core/Src/adc.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/code.elf.dir/Core/Src/adc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/code.elf.dir/Core/Src/adc.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Core/Src/adc.c.obj -MF CMakeFiles\code.elf.dir\Core\Src\adc.c.obj.d -o CMakeFiles\code.elf.dir\Core\Src\adc.c.obj -c E:\files\project\one_robot\code\Core\Src\adc.c
 
 CMakeFiles/code.elf.dir/Core/Src/adc.c.i: cmake_force
@@ -113,7 +127,7 @@ CMakeFiles/code.elf.dir/Core/Src/adc.c.s: cmake_force
 CMakeFiles/code.elf.dir/Core/Src/dma.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Core/Src/dma.c.obj: ../Core/Src/dma.c
 CMakeFiles/code.elf.dir/Core/Src/dma.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/code.elf.dir/Core/Src/dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/code.elf.dir/Core/Src/dma.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Core/Src/dma.c.obj -MF CMakeFiles\code.elf.dir\Core\Src\dma.c.obj.d -o CMakeFiles\code.elf.dir\Core\Src\dma.c.obj -c E:\files\project\one_robot\code\Core\Src\dma.c
 
 CMakeFiles/code.elf.dir/Core/Src/dma.c.i: cmake_force
@@ -127,7 +141,7 @@ CMakeFiles/code.elf.dir/Core/Src/dma.c.s: cmake_force
 CMakeFiles/code.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Core/Src/gpio.c.obj: ../Core/Src/gpio.c
 CMakeFiles/code.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/code.elf.dir/Core/Src/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/code.elf.dir/Core/Src/gpio.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Core/Src/gpio.c.obj -MF CMakeFiles\code.elf.dir\Core\Src\gpio.c.obj.d -o CMakeFiles\code.elf.dir\Core\Src\gpio.c.obj -c E:\files\project\one_robot\code\Core\Src\gpio.c
 
 CMakeFiles/code.elf.dir/Core/Src/gpio.c.i: cmake_force
@@ -141,7 +155,7 @@ CMakeFiles/code.elf.dir/Core/Src/gpio.c.s: cmake_force
 CMakeFiles/code.elf.dir/Core/Src/main.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Core/Src/main.c.obj: ../Core/Src/main.c
 CMakeFiles/code.elf.dir/Core/Src/main.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/code.elf.dir/Core/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/code.elf.dir/Core/Src/main.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Core/Src/main.c.obj -MF CMakeFiles\code.elf.dir\Core\Src\main.c.obj.d -o CMakeFiles\code.elf.dir\Core\Src\main.c.obj -c E:\files\project\one_robot\code\Core\Src\main.c
 
 CMakeFiles/code.elf.dir/Core/Src/main.c.i: cmake_force
@@ -155,7 +169,7 @@ CMakeFiles/code.elf.dir/Core/Src/main.c.s: cmake_force
 CMakeFiles/code.elf.dir/Core/Src/oled.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Core/Src/oled.c.obj: ../Core/Src/oled.c
 CMakeFiles/code.elf.dir/Core/Src/oled.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/code.elf.dir/Core/Src/oled.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/code.elf.dir/Core/Src/oled.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Core/Src/oled.c.obj -MF CMakeFiles\code.elf.dir\Core\Src\oled.c.obj.d -o CMakeFiles\code.elf.dir\Core\Src\oled.c.obj -c E:\files\project\one_robot\code\Core\Src\oled.c
 
 CMakeFiles/code.elf.dir/Core/Src/oled.c.i: cmake_force
@@ -169,7 +183,7 @@ CMakeFiles/code.elf.dir/Core/Src/oled.c.s: cmake_force
 CMakeFiles/code.elf.dir/Core/Src/retarget.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Core/Src/retarget.c.obj: ../Core/Src/retarget.c
 CMakeFiles/code.elf.dir/Core/Src/retarget.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/code.elf.dir/Core/Src/retarget.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/code.elf.dir/Core/Src/retarget.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Core/Src/retarget.c.obj -MF CMakeFiles\code.elf.dir\Core\Src\retarget.c.obj.d -o CMakeFiles\code.elf.dir\Core\Src\retarget.c.obj -c E:\files\project\one_robot\code\Core\Src\retarget.c
 
 CMakeFiles/code.elf.dir/Core/Src/retarget.c.i: cmake_force
@@ -183,7 +197,7 @@ CMakeFiles/code.elf.dir/Core/Src/retarget.c.s: cmake_force
 CMakeFiles/code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: ../Core/Src/stm32f1xx_hal_msp.c
 CMakeFiles/code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj -MF CMakeFiles\code.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj.d -o CMakeFiles\code.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj -c E:\files\project\one_robot\code\Core\Src\stm32f1xx_hal_msp.c
 
 CMakeFiles/code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.i: cmake_force
@@ -197,7 +211,7 @@ CMakeFiles/code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.s: cmake_force
 CMakeFiles/code.elf.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Core/Src/stm32f1xx_it.c.obj: ../Core/Src/stm32f1xx_it.c
 CMakeFiles/code.elf.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/code.elf.dir/Core/Src/stm32f1xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/code.elf.dir/Core/Src/stm32f1xx_it.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Core/Src/stm32f1xx_it.c.obj -MF CMakeFiles\code.elf.dir\Core\Src\stm32f1xx_it.c.obj.d -o CMakeFiles\code.elf.dir\Core\Src\stm32f1xx_it.c.obj -c E:\files\project\one_robot\code\Core\Src\stm32f1xx_it.c
 
 CMakeFiles/code.elf.dir/Core/Src/stm32f1xx_it.c.i: cmake_force
@@ -211,7 +225,7 @@ CMakeFiles/code.elf.dir/Core/Src/stm32f1xx_it.c.s: cmake_force
 CMakeFiles/code.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Core/Src/syscalls.c.obj: ../Core/Src/syscalls.c
 CMakeFiles/code.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/code.elf.dir/Core/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/code.elf.dir/Core/Src/syscalls.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\code.elf.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\code.elf.dir\Core\Src\syscalls.c.obj -c E:\files\project\one_robot\code\Core\Src\syscalls.c
 
 CMakeFiles/code.elf.dir/Core/Src/syscalls.c.i: cmake_force
@@ -225,7 +239,7 @@ CMakeFiles/code.elf.dir/Core/Src/syscalls.c.s: cmake_force
 CMakeFiles/code.elf.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Core/Src/system_stm32f1xx.c.obj: ../Core/Src/system_stm32f1xx.c
 CMakeFiles/code.elf.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/code.elf.dir/Core/Src/system_stm32f1xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/code.elf.dir/Core/Src/system_stm32f1xx.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Core/Src/system_stm32f1xx.c.obj -MF CMakeFiles\code.elf.dir\Core\Src\system_stm32f1xx.c.obj.d -o CMakeFiles\code.elf.dir\Core\Src\system_stm32f1xx.c.obj -c E:\files\project\one_robot\code\Core\Src\system_stm32f1xx.c
 
 CMakeFiles/code.elf.dir/Core/Src/system_stm32f1xx.c.i: cmake_force
@@ -239,7 +253,7 @@ CMakeFiles/code.elf.dir/Core/Src/system_stm32f1xx.c.s: cmake_force
 CMakeFiles/code.elf.dir/Core/Src/tim.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Core/Src/tim.c.obj: ../Core/Src/tim.c
 CMakeFiles/code.elf.dir/Core/Src/tim.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/code.elf.dir/Core/Src/tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/code.elf.dir/Core/Src/tim.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Core/Src/tim.c.obj -MF CMakeFiles\code.elf.dir\Core\Src\tim.c.obj.d -o CMakeFiles\code.elf.dir\Core\Src\tim.c.obj -c E:\files\project\one_robot\code\Core\Src\tim.c
 
 CMakeFiles/code.elf.dir/Core/Src/tim.c.i: cmake_force
@@ -253,7 +267,7 @@ CMakeFiles/code.elf.dir/Core/Src/tim.c.s: cmake_force
 CMakeFiles/code.elf.dir/Core/Src/u_iic.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Core/Src/u_iic.c.obj: ../Core/Src/u_iic.c
 CMakeFiles/code.elf.dir/Core/Src/u_iic.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/code.elf.dir/Core/Src/u_iic.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/code.elf.dir/Core/Src/u_iic.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Core/Src/u_iic.c.obj -MF CMakeFiles\code.elf.dir\Core\Src\u_iic.c.obj.d -o CMakeFiles\code.elf.dir\Core\Src\u_iic.c.obj -c E:\files\project\one_robot\code\Core\Src\u_iic.c
 
 CMakeFiles/code.elf.dir/Core/Src/u_iic.c.i: cmake_force
@@ -267,7 +281,7 @@ CMakeFiles/code.elf.dir/Core/Src/u_iic.c.s: cmake_force
 CMakeFiles/code.elf.dir/Core/Src/usart.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Core/Src/usart.c.obj: ../Core/Src/usart.c
 CMakeFiles/code.elf.dir/Core/Src/usart.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/code.elf.dir/Core/Src/usart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/code.elf.dir/Core/Src/usart.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Core/Src/usart.c.obj -MF CMakeFiles\code.elf.dir\Core\Src\usart.c.obj.d -o CMakeFiles\code.elf.dir\Core\Src\usart.c.obj -c E:\files\project\one_robot\code\Core\Src\usart.c
 
 CMakeFiles/code.elf.dir/Core/Src/usart.c.i: cmake_force
@@ -281,7 +295,7 @@ CMakeFiles/code.elf.dir/Core/Src/usart.c.s: cmake_force
 CMakeFiles/code.elf.dir/Core/eMPL/inv_mpu.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Core/eMPL/inv_mpu.c.obj: ../Core/eMPL/inv_mpu.c
 CMakeFiles/code.elf.dir/Core/eMPL/inv_mpu.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/code.elf.dir/Core/eMPL/inv_mpu.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/code.elf.dir/Core/eMPL/inv_mpu.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Core/eMPL/inv_mpu.c.obj -MF CMakeFiles\code.elf.dir\Core\eMPL\inv_mpu.c.obj.d -o CMakeFiles\code.elf.dir\Core\eMPL\inv_mpu.c.obj -c E:\files\project\one_robot\code\Core\eMPL\inv_mpu.c
 
 CMakeFiles/code.elf.dir/Core/eMPL/inv_mpu.c.i: cmake_force
@@ -295,7 +309,7 @@ CMakeFiles/code.elf.dir/Core/eMPL/inv_mpu.c.s: cmake_force
 CMakeFiles/code.elf.dir/Core/eMPL/inv_mpu_dmp_motion_driver.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Core/eMPL/inv_mpu_dmp_motion_driver.c.obj: ../Core/eMPL/inv_mpu_dmp_motion_driver.c
 CMakeFiles/code.elf.dir/Core/eMPL/inv_mpu_dmp_motion_driver.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/code.elf.dir/Core/eMPL/inv_mpu_dmp_motion_driver.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/code.elf.dir/Core/eMPL/inv_mpu_dmp_motion_driver.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Core/eMPL/inv_mpu_dmp_motion_driver.c.obj -MF CMakeFiles\code.elf.dir\Core\eMPL\inv_mpu_dmp_motion_driver.c.obj.d -o CMakeFiles\code.elf.dir\Core\eMPL\inv_mpu_dmp_motion_driver.c.obj -c E:\files\project\one_robot\code\Core\eMPL\inv_mpu_dmp_motion_driver.c
 
 CMakeFiles/code.elf.dir/Core/eMPL/inv_mpu_dmp_motion_driver.c.i: cmake_force
@@ -309,7 +323,7 @@ CMakeFiles/code.elf.dir/Core/eMPL/inv_mpu_dmp_motion_driver.c.s: cmake_force
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj -MF CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj.d -o CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj -c E:\files\project\one_robot\code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c
 
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i: cmake_force
@@ -323,7 +337,7 @@ CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s: cmak
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj -MF CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c.obj.d -o CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c.obj -c E:\files\project\one_robot\code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c
 
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.i: cmake_force
@@ -337,7 +351,7 @@ CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.s: 
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj -MF CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c.obj.d -o CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c.obj -c E:\files\project\one_robot\code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c
 
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.i: cmake_force
@@ -351,7 +365,7 @@ CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj -MF CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj.d -o CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj -c E:\files\project\one_robot\code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c
 
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i: cmake_force
@@ -365,7 +379,7 @@ CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj -MF CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj.d -o CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj -c E:\files\project\one_robot\code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c
 
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i: cmake_force
@@ -379,7 +393,7 @@ CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.s: 
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj -MF CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj.d -o CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj -c E:\files\project\one_robot\code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c
 
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i: cmake_force
@@ -393,7 +407,7 @@ CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.s:
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj -MF CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj.d -o CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj -c E:\files\project\one_robot\code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c
 
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i: cmake_force
@@ -407,7 +421,7 @@ CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.s
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj -MF CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj.d -o CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj -c E:\files\project\one_robot\code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c
 
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i: cmake_force
@@ -421,7 +435,7 @@ CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj -MF CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj.d -o CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj -c E:\files\project\one_robot\code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c
 
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i: cmake_force
@@ -435,7 +449,7 @@ CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.s:
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj -MF CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj.d -o CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj -c E:\files\project\one_robot\code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c
 
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i: cmake_force
@@ -449,7 +463,7 @@ CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -MF CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj.d -o CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj -c E:\files\project\one_robot\code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c
 
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i: cmake_force
@@ -463,7 +477,7 @@ CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.s: 
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -MF CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj.d -o CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj -c E:\files\project\one_robot\code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c
 
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i: cmake_force
@@ -477,7 +491,7 @@ CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.s: 
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -MF CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj.d -o CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj -c E:\files\project\one_robot\code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c
 
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i: cmake_force
@@ -491,7 +505,7 @@ CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj -MF CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj.d -o CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj -c E:\files\project\one_robot\code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c
 
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i: cmake_force
@@ -505,7 +519,7 @@ CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.s: 
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj -MF CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj.d -o CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj -c E:\files\project\one_robot\code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c
 
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i: cmake_force
@@ -519,7 +533,7 @@ CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: CMakeFiles/code.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj -MF CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj.d -o CMakeFiles\code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj -c E:\files\project\one_robot\code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c
 
 CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i: cmake_force
@@ -532,7 +546,7 @@ CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s:
 
 CMakeFiles/code.elf.dir/startup/startup_stm32f103xb.s.obj: CMakeFiles/code.elf.dir/flags.make
 CMakeFiles/code.elf.dir/startup/startup_stm32f103xb.s.obj: ../startup/startup_stm32f103xb.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building ASM object CMakeFiles/code.elf.dir/startup/startup_stm32f103xb.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object CMakeFiles/code.elf.dir/startup/startup_stm32f103xb.s.obj"
 	F:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\code.elf.dir\startup\startup_stm32f103xb.s.obj -c E:\files\project\one_robot\code\startup\startup_stm32f103xb.s
 
 CMakeFiles/code.elf.dir/startup/startup_stm32f103xb.s.i: cmake_force
@@ -546,6 +560,7 @@ CMakeFiles/code.elf.dir/startup/startup_stm32f103xb.s.s: cmake_force
 # Object files for target code.elf
 code_elf_OBJECTS = \
 "CMakeFiles/code.elf.dir/Core/Src/MPU6050.c.obj" \
+"CMakeFiles/code.elf.dir/Core/Src/N20Motor.c.obj" \
 "CMakeFiles/code.elf.dir/Core/Src/UART.c.obj" \
 "CMakeFiles/code.elf.dir/Core/Src/adc.c.obj" \
 "CMakeFiles/code.elf.dir/Core/Src/dma.c.obj" \
@@ -584,6 +599,7 @@ code_elf_OBJECTS = \
 code_elf_EXTERNAL_OBJECTS =
 
 code.elf: CMakeFiles/code.elf.dir/Core/Src/MPU6050.c.obj
+code.elf: CMakeFiles/code.elf.dir/Core/Src/N20Motor.c.obj
 code.elf: CMakeFiles/code.elf.dir/Core/Src/UART.c.obj
 code.elf: CMakeFiles/code.elf.dir/Core/Src/adc.c.obj
 code.elf: CMakeFiles/code.elf.dir/Core/Src/dma.c.obj
@@ -619,7 +635,7 @@ code.elf: CMakeFiles/code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal
 code.elf: CMakeFiles/code.elf.dir/startup/startup_stm32f103xb.s.obj
 code.elf: CMakeFiles/code.elf.dir/build.make
 code.elf: CMakeFiles/code.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking C executable code.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\files\project\one_robot\code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking C executable code.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\code.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building E:/files/project/one_robot/code/cmake-build-debug/code.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building E:/files/project/one_robot/code/cmake-build-debug/code.bin"

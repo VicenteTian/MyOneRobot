@@ -33,6 +33,7 @@
 #include "UART.h"
 #include "retarget.h"
 #include "../eMPL/inv_mpu.h"
+#include "N20Motor.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -105,8 +106,12 @@ int main(void)
     RetargetInit(&huart3);
     OLED_Init();
     OLED_Clear();
-    // if(!MPU6050_Init())
-    HAL_GPIO_WritePin(GPIOA, Green_Pin, GPIO_PIN_RESET);
+    __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,100);
+    __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_4,400);
+    __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_3,300);
+    HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_1);
+    HAL_TIM_PWM_Start(&htim3,TIM_CHANNEL_3);
+    HAL_TIM_PWM_Start(&htim3,TIM_CHANNEL_4);
     mpu_dmp_init();
     OLED_ShowString(0, 0, "Pitch:", 12);
     OLED_ShowString(0, 2, "Roll :", 12);
@@ -121,9 +126,8 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
         //HAL_Delay(20);
-        var_MPU6050[3] = mpu_dmp_get_data(&var_MPU6050[0], &var_MPU6050[1], &var_MPU6050[2]);            //寰楀埌濮匡拷?锟借鍗虫鎷夎
+        var_MPU6050[3] = mpu_dmp_get_data(&var_MPU6050[0], &var_MPU6050[1], &var_MPU6050[2]);
         //vcan_sendware((uint8_t *)var_MPU6050, sizeof(var_MPU6050));
-        /**************鏄剧ず淇话锟??***************/
         if (var_MPU6050[0] < 0) {
             OLED_ShowString(48, 0, "-", 12);
             OLED_Float(0, 56, -var_MPU6050[0], 3);
@@ -146,8 +150,8 @@ int main(void)
             OLED_Float(4, 56, var_MPU6050[2], 3);
         }
 
-        OLED_Float(6,48,MPU_Get_Temperature(),2);	//鏄剧ず娓╁害
-
+        OLED_Float(6,48,MPU_Get_Temperature(),2);
+        N20Motor_Ctrl();
     }
   /* USER CODE END 3 */
 }

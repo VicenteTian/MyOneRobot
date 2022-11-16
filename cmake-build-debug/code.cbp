@@ -99,6 +99,9 @@
 		<Unit filename="E:/files/project/one_robot/code/Core/Inc/MPU6050.h">
 			<Option target="code.elf"/>
 		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Inc/N20Motor.h">
+			<Option target="code.elf"/>
+		</Unit>
 		<Unit filename="E:/files/project/one_robot/code/Core/Inc/UART.h">
 			<Option target="code.elf"/>
 		</Unit>
@@ -142,6 +145,9 @@
 			<Option target="code.elf"/>
 		</Unit>
 		<Unit filename="E:/files/project/one_robot/code/Core/Src/MPU6050.c">
+			<Option target="code.elf"/>
+		</Unit>
+		<Unit filename="E:/files/project/one_robot/code/Core/Src/N20Motor.c">
 			<Option target="code.elf"/>
 		</Unit>
 		<Unit filename="E:/files/project/one_robot/code/Core/Src/UART.c">
