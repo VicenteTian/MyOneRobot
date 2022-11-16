@@ -6,6 +6,7 @@
 
 Motor_TypeDef Motor_Pitch = {0};
 Motor_TypeDef Motor_Roll = {.Motor_ID=1};
+__IO uint8_t Encoder_Sample_cycle=0;
 void Motor_Init(void)
 {
     Motor_Pitch.PWM=0;
@@ -27,7 +28,7 @@ void Motor_Ctrl(Motor_TypeDef *motor) {
             __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_4, Motor_Pitch.PWM);
             __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_3, 0);
         } else {
-            HAL_GPIO_WritePin(GPIOA, Green_Pin, GPIO_PIN_SET);
+            HAL_GPIO_WritePin(GPIOA, Green_Pin, GPIO_PIN_SET);//前进转向
             __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_4, 0);
             __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_3, Motor_Pitch.PWM);
         }//电机转向和转速控制
@@ -37,8 +38,16 @@ void Motor_Ctrl(Motor_TypeDef *motor) {
         if (motor->Dir) {
             HAL_GPIO_WritePin(GPIOB, DIR_Pin, GPIO_PIN_RESET);
         } else {
-            HAL_GPIO_WritePin(GPIOB, DIR_Pin, GPIO_PIN_SET);
+            HAL_GPIO_WritePin(GPIOB, DIR_Pin, GPIO_PIN_SET);//左转
         }//电机转向控制
         __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, motor->PWM);//电机转速控制
+    }
+}
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)//外部中断
+{
+    /******一倍频*******/
+    if(GPIO_Pin==GPIO_PIN_6)//编码器计数，检测到PA6(A相)跳变沿
+    {
+            ++Motor_Pitch.Encoder;
     }
 }

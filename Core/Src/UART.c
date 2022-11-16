@@ -158,7 +158,3 @@ int fgetc(FILE * f)
   * 返 回 值: 无
   * 说    明：无
   */
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *UartHandle)
-{
-    printf("接收中断被触发喽\n");
-}

@@ -11,7 +11,7 @@
 void get_key(void);
 void OLED_show(void );
 
-
+void UART_ctrl(void);
 void MPU_test(void);
 void Motor_test(void);
 #endif //CODE_DEBUG_H

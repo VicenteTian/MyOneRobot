@@ -7,6 +7,48 @@
 
 extern Motor_TypeDef Motor_Pitch;
 extern Motor_TypeDef Motor_Roll;
+extern __IO uint16_t time_count; // 时间计数，每1ms增加一(与滴答定时器频率有关)
+uint8_t Receive_COM = 0;
+uint8_t is_message = 0;
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
+    is_message = 1;
+    HAL_GPIO_TogglePin(GPIOB,Blue_Pin);
+    HAL_UART_Receive_IT(&huart3, &Receive_COM, 1);
+}
+
+void UART_ctrl(void) {
+    if (is_message) {
+        is_message = 0;
+        switch (Receive_COM) {
+            case 's':
+                HAL_GPIO_WritePin(GPIOB, STBY_Pin | EN_Pin, GPIO_PIN_RESET);//两个电机失能
+                break;
+            case 'e':
+                Motor_Pitch.PWM = 0;
+                Motor_Roll.PWM = 0;
+                HAL_GPIO_WritePin(GPIOB, STBY_Pin | EN_Pin, GPIO_PIN_SET);//两个电机使能
+                break;
+            case 'a':
+                Motor_Pitch.PWM += 100;//电机加速
+                break;
+            case '1':
+                Motor_Roll.PWM += 100;
+                break;
+            case 'd':
+                Motor_Pitch.PWM -= 100;//电机减速
+                break;
+            case '2':
+                Motor_Roll.PWM += 100;
+                break;
+            case 'c':
+                Motor_Pitch.Dir = !Motor_Pitch.Dir;
+                Motor_Roll.Dir = !Motor_Roll.Dir;
+                break;
+        }
+    }
+
+}
 
 void get_key(void) {
     if (HAL_GPIO_ReadPin(GPIOB, K3_Pin) == GPIO_PIN_RESET) {
@@ -28,6 +70,7 @@ void OLED_show(void) {
     OLED_ShowString(0, 2, (uint8_t *) "Roll :", 12);
     OLED_ShowString(0, 4, (uint8_t *) "Yaw  :", 12);
     OLED_ShowString(0, 6, (uint8_t *) "Temp :", 12);
+    HAL_UART_Receive_IT(&huart3, &Receive_COM, 1);//开启串口的接收中断功能
 }
 
 void MPU_test(void) {
@@ -58,11 +101,18 @@ void MPU_test(void) {
 
     OLED_Float(6, 48, MPU_Get_Temperature(), 2);
 }
-void Motor_test(void)
-{
-    Motor_Pitch.PWM=350;
-    Motor_Roll.PWM=500;
-    get_key();
+
+void Motor_test(void) {
+    //Motor_Pitch.PWM = 0;
+    //Motor_Roll.PWM = 0;
+    //get_key();
+
     Motor_Ctrl(&Motor_Pitch);
     Motor_Ctrl(&Motor_Roll);
+    if (time_count > 10) {
+        time_count = 0;
+        MPU_test();
+        //vcan_sendware((uint8_t *) &Motor_Pitch.Encoder, sizeof(Motor_Pitch.Encoder));
+        Motor_Pitch.Encoder = 0;
+    }
 }
