@@ -36,10 +36,14 @@ void UART_ctrl(void) {
                 Motor_Roll.PWM += 100;
                 break;
             case 'd':
+                if(Motor_Pitch.PWM<100)
+                    Motor_Pitch.PWM=100;
                 Motor_Pitch.PWM -= 100;//电机减速
                 break;
             case '2':
-                Motor_Roll.PWM += 100;
+                if(Motor_Roll.PWM<100)
+                    Motor_Roll.PWM=100;
+                Motor_Roll.PWM -= 100;
                 break;
             case 'c':
                 Motor_Pitch.Dir = !Motor_Pitch.Dir;
@@ -55,27 +59,30 @@ void get_key(void) {
         HAL_Delay(100);
         if (HAL_GPIO_ReadPin(GPIOB, K3_Pin) == GPIO_PIN_RESET) {
             Motor_Pitch.Dir = !Motor_Pitch.Dir;
+            Motor_Roll.Dir = !Motor_Roll.Dir;
         }
     }
     if (HAL_GPIO_ReadPin(GPIOB, K2_Pin) == GPIO_PIN_RESET) {
         HAL_Delay(100);
         if (HAL_GPIO_ReadPin(GPIOB, K2_Pin) == GPIO_PIN_RESET) {
-            Motor_Pitch.Enable = !Motor_Pitch.Enable;
+            Motor_Pitch.PID_Enable = !Motor_Pitch.PID_Enable;
+            Motor_Roll.PID_Enable = !Motor_Roll.PID_Enable;
         }
     }
 }
 
 void OLED_show(void) {
     OLED_ShowString(0, 0, (uint8_t *) "Pitch:", 12);
-    OLED_ShowString(0, 2, (uint8_t *) "Roll :", 12);
-    OLED_ShowString(0, 4, (uint8_t *) "Yaw  :", 12);
-    OLED_ShowString(0, 6, (uint8_t *) "Temp :", 12);
+    OLED_ShowString(0, 1, (uint8_t *) "Roll :", 12);
+    OLED_ShowString(0, 2, (uint8_t *) "Yaw  :", 12);
+    OLED_ShowString(0, 3, (uint8_t *) "Temp :", 12);
+    OLED_ShowString(0, 4, (uint8_t *) "MP   :", 12);
+    OLED_ShowString(0, 5, (uint8_t *) "MR   :", 12);
+    OLED_ShowString(0, 6, (uint8_t *) "Bat V:", 12);
     HAL_UART_Receive_IT(&huart3, &Receive_COM, 1);//开启串口的接收中断功能
 }
 
-void MPU_test(void) {
-    float var_MPU6050[4] = {0};
-    var_MPU6050[3] = mpu_dmp_get_data(&var_MPU6050[0], &var_MPU6050[1], &var_MPU6050[2]);
+void MPU_data_show(float *var_MPU6050) {
     //vcan_sendware((uint8_t *)var_MPU6050, sizeof(var_MPU6050));
     if (var_MPU6050[0] < 0) {
         OLED_ShowString(48, 0, (uint8_t *) "-", 12);
@@ -85,34 +92,25 @@ void MPU_test(void) {
         OLED_Float(0, 56, var_MPU6050[0], 3);
     }
     if (var_MPU6050[1] < 0) {
-        OLED_ShowString(48, 2, (uint8_t *) "-", 12);
-        OLED_Float(2, 56, -var_MPU6050[1], 3);
+        OLED_ShowString(48, 1, (uint8_t *) "-", 12);
+        OLED_Float(1, 56, -var_MPU6050[1], 3);
     } else {
-        OLED_ShowString(48, 2, (uint8_t *) "+", 12);
-        OLED_Float(2, 56, var_MPU6050[1], 3);
+        OLED_ShowString(48, 1, (uint8_t *) "+", 12);
+        OLED_Float(1, 56, var_MPU6050[1], 3);
     }
     if (var_MPU6050[2] < 0) {
-        OLED_ShowString(48, 4, (uint8_t *) "-", 12);
-        OLED_Float(4, 56, -var_MPU6050[2], 3);
+        OLED_ShowString(48, 2, (uint8_t *) "-", 12);
+        OLED_Float(2, 56, -var_MPU6050[2], 3);
     } else {
-        OLED_ShowString(48, 4, (uint8_t *) "+", 12);
-        OLED_Float(4, 56, var_MPU6050[2], 3);
+        OLED_ShowString(48, 2, (uint8_t *) "+", 12);
+        OLED_Float(2, 56, var_MPU6050[2], 3);
     }
-
-    OLED_Float(6, 48, MPU_Get_Temperature(), 2);
+    OLED_Float(3, 48, MPU_Get_Temperature(), 2);
 }
-
 void Motor_test(void) {
     //Motor_Pitch.PWM = 0;
     //Motor_Roll.PWM = 0;
     //get_key();
-
     Motor_Ctrl(&Motor_Pitch);
     Motor_Ctrl(&Motor_Roll);
-    if (time_count > 10) {
-        time_count = 0;
-        MPU_test();
-        //vcan_sendware((uint8_t *) &Motor_Pitch.Encoder, sizeof(Motor_Pitch.Encoder));
-        Motor_Pitch.Encoder = 0;
-    }
 }

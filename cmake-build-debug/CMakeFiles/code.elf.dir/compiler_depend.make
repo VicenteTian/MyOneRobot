@@ -105,7 +105,9 @@ CMakeFiles/code.elf.dir/Core/Src/Motor.c.obj: ../Core/Src/Motor.c \
   ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
   ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
-  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+  ../Core/Inc/oled.h \
+  ../Core/Inc/gpio.h
 
 CMakeFiles/code.elf.dir/Core/Src/UART.c.obj: ../Core/Src/UART.c \
   ../Core/Inc/UART.h \
@@ -1722,6 +1724,10 @@ F:/gcc-arm-none-eabi/arm-none-eabi/include/machine/types.h:
 
 ../Core/Inc/tim.h:
 
+../Core/Inc/oled.h:
+
+../Core/Inc/gpio.h:
+
 ../Core/Src/UART.c:
 
 ../Core/Src/adc.c:
@@ -1729,10 +1735,6 @@ F:/gcc-arm-none-eabi/arm-none-eabi/include/machine/types.h:
 ../Core/Src/debug.c:
 
 ../Core/Inc/debug.h:
-
-../Core/Inc/oled.h:
-
-../Core/Inc/gpio.h:
 
 ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c:
 

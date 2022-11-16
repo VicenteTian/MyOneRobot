@@ -108,6 +108,8 @@ CMakeFiles/code.elf.dir/Core/Src/Motor.c.obj
  E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
  E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
  E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+ E:/files/project/one_robot/code/Core/Inc/oled.h
+ E:/files/project/one_robot/code/Core/Inc/gpio.h
 
 CMakeFiles/code.elf.dir/Core/Src/UART.c.obj
  E:/files/project/one_robot/code/Core/Src/UART.c

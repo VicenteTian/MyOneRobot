@@ -69,7 +69,8 @@ __IO  uint16_t time_count = 0;
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+    float var_MPU6050[3] = {0};
+    short var_MPUgyr[3] = {0};
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -101,11 +102,15 @@ int main(void)
     OLED_Init();
     OLED_Clear();
     Motor_Init();
-    //HAL_TIM_Encoder_Start(&htim3, TIM_CHANNEL_ALL);
+
     HAL_ADCEx_Calibration_Start(&hadc1);
     //HAL_ADC_Start_DMA(&hadc1, (uint32_t *) &var_Encode[0], 1);
     mpu_dmp_init();
+    OLED_ShowString(0, 0, (uint8_t *) "Wait 3s....:", 12);
+    HAL_Delay(3000);
+    OLED_Clear();
     OLED_show();
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -115,9 +120,19 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
        // MPU_test();
-        Motor_test();
+        //Motor_test();
+        get_key();
         UART_ctrl();
-
+        mpu_dmp_get_data(&var_MPU6050[0], &var_MPU6050[1], &var_MPU6050[2]);//获取陀螺仪姿态数据
+        MPU_Get_Gyroscope(&var_MPUgyr[0],&var_MPUgyr[1],&var_MPUgyr[2]);////获取陀螺仪角速度数据
+        //vcan_sendware((uint8_t *)var_MPUgyr, sizeof(var_MPUgyr));
+        if (time_count > 5) {
+            time_count = 0;
+            get_Encoder();
+            MPU_data_show(var_MPU6050);
+            //Pitch_balance_ctrl(var_MPU6050[0],var_MPUgyr[1]);
+            Roll_balance_ctrl(var_MPU6050[1],var_MPUgyr[0]);
+        }
     }
   /* USER CODE END 3 */
 }
