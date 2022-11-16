@@ -67,8 +67,8 @@ CMakeFiles/code.elf.dir/Core/Src/MPU6050.c.obj: ../Core/Src/MPU6050.c \
   F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
   ../Core/Inc/u_iic.h
 
-CMakeFiles/code.elf.dir/Core/Src/N20Motor.c.obj: ../Core/Src/N20Motor.c \
-  ../Core/Inc/N20Motor.h \
+CMakeFiles/code.elf.dir/Core/Src/Motor.c.obj: ../Core/Src/Motor.c \
+  ../Core/Inc/Motor.h \
   ../Core/Inc/tim.h \
   ../Core/Inc/main.h \
   ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
@@ -210,6 +210,75 @@ CMakeFiles/code.elf.dir/Core/Src/adc.c.obj: ../Core/Src/adc.c \
   ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
   ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 
+CMakeFiles/code.elf.dir/Core/Src/debug.c.obj: ../Core/Src/debug.c \
+  ../Core/Inc/debug.h \
+  ../Core/Inc/oled.h \
+  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+  ../Core/Inc/stm32f1xx_hal_conf.h \
+  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
+  ../Drivers/CMSIS/Include/core_cm3.h \
+  F:/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  ../Drivers/CMSIS/Include/cmsis_version.h \
+  ../Drivers/CMSIS/Include/cmsis_compiler.h \
+  ../Drivers/CMSIS/Include/cmsis_gcc.h \
+  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  F:/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
+  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
+  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
+  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+  ../Core/Inc/gpio.h \
+  ../Core/Inc/main.h \
+  ../Core/Inc/MPU6050.h \
+  ../Core/eMPL/inv_mpu.h \
+  ../Core/Inc/UART.h \
+  ../Core/Inc/usart.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/stdio.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  F:/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/types.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/machine/endian.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/machine/_endian.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/select.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/_sigset.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timeval.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/timespec.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timespec.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/_pthreadtypes.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/sched.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/machine/types.h \
+  F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/stdio.h
+
 CMakeFiles/code.elf.dir/Core/Src/dma.c.obj: ../Core/Src/dma.c \
   ../Core/Inc/dma.h \
   ../Core/Inc/main.h \
@@ -331,9 +400,9 @@ CMakeFiles/code.elf.dir/Core/Src/main.c.obj: ../Core/Src/main.c \
   ../Core/Inc/tim.h \
   ../Core/Inc/usart.h \
   ../Core/Inc/gpio.h \
+  ../Core/Inc/debug.h \
   ../Core/Inc/oled.h \
   ../Core/Inc/gpio.h \
-  ../Core/Inc/bmp.h \
   ../Core/Inc/MPU6050.h \
   ../Core/eMPL/inv_mpu.h \
   ../Core/Inc/UART.h \
@@ -367,8 +436,8 @@ CMakeFiles/code.elf.dir/Core/Src/main.c.obj: ../Core/Src/main.c \
   F:/gcc-arm-none-eabi/arm-none-eabi/include/time.h \
   F:/gcc-arm-none-eabi/arm-none-eabi/include/machine/time.h \
   F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
-  ../Core/eMPL/inv_mpu.h \
-  ../Core/Inc/N20Motor.h
+  ../Core/Inc/Motor.h \
+  ../Core/Inc/tim.h
 
 CMakeFiles/code.elf.dir/Core/Src/oled.c.obj: ../Core/Src/oled.c \
   ../Core/Inc/oled.h \
@@ -1569,8 +1638,6 @@ F:/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h:
 
 ../Core/Inc/main.h:
 
-../Core/Inc/N20Motor.h:
-
 ../Drivers/CMSIS/Include/cmsis_gcc.h:
 
 ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
@@ -1647,13 +1714,27 @@ F:/gcc-arm-none-eabi/arm-none-eabi/include/sys/sched.h:
 
 F:/gcc-arm-none-eabi/arm-none-eabi/include/machine/types.h:
 
-../Core/Src/N20Motor.c:
+../Core/Src/Motor.c:
+
+../Core/Inc/Motor.h:
 
 ../Core/Inc/tim.h:
 
 ../Core/Src/UART.c:
 
 ../Core/Src/adc.c:
+
+../Core/Src/debug.c:
+
+../Core/Inc/debug.h:
+
+../Core/Inc/oled.h:
+
+../Core/Inc/gpio.h:
+
+../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c:
+
+../Core/eMPL/inv_mpu.h:
 
 ../Core/eMPL/dmpmap.h:
 
@@ -1663,17 +1744,7 @@ F:/gcc-arm-none-eabi/arm-none-eabi/include/machine/types.h:
 
 ../Core/Src/gpio.c:
 
-../Core/Inc/gpio.h:
-
 ../Core/Src/main.c:
-
-../Core/Inc/oled.h:
-
-../Core/Inc/bmp.h:
-
-../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c:
-
-../Core/eMPL/inv_mpu.h:
 
 ../Core/Inc/retarget.h:
 

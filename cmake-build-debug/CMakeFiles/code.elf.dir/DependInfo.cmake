@@ -31,9 +31,10 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "E:/files/project/one_robot/code/Core/Src/MPU6050.c" "CMakeFiles/code.elf.dir/Core/Src/MPU6050.c.obj" "gcc" "CMakeFiles/code.elf.dir/Core/Src/MPU6050.c.obj.d"
-  "E:/files/project/one_robot/code/Core/Src/N20Motor.c" "CMakeFiles/code.elf.dir/Core/Src/N20Motor.c.obj" "gcc" "CMakeFiles/code.elf.dir/Core/Src/N20Motor.c.obj.d"
+  "E:/files/project/one_robot/code/Core/Src/Motor.c" "CMakeFiles/code.elf.dir/Core/Src/Motor.c.obj" "gcc" "CMakeFiles/code.elf.dir/Core/Src/Motor.c.obj.d"
   "E:/files/project/one_robot/code/Core/Src/UART.c" "CMakeFiles/code.elf.dir/Core/Src/UART.c.obj" "gcc" "CMakeFiles/code.elf.dir/Core/Src/UART.c.obj.d"
   "E:/files/project/one_robot/code/Core/Src/adc.c" "CMakeFiles/code.elf.dir/Core/Src/adc.c.obj" "gcc" "CMakeFiles/code.elf.dir/Core/Src/adc.c.obj.d"
+  "E:/files/project/one_robot/code/Core/Src/debug.c" "CMakeFiles/code.elf.dir/Core/Src/debug.c.obj" "gcc" "CMakeFiles/code.elf.dir/Core/Src/debug.c.obj.d"
   "E:/files/project/one_robot/code/Core/Src/dma.c" "CMakeFiles/code.elf.dir/Core/Src/dma.c.obj" "gcc" "CMakeFiles/code.elf.dir/Core/Src/dma.c.obj.d"
   "E:/files/project/one_robot/code/Core/Src/gpio.c" "CMakeFiles/code.elf.dir/Core/Src/gpio.c.obj" "gcc" "CMakeFiles/code.elf.dir/Core/Src/gpio.c.obj.d"
   "E:/files/project/one_robot/code/Core/Src/main.c" "CMakeFiles/code.elf.dir/Core/Src/main.c.obj" "gcc" "CMakeFiles/code.elf.dir/Core/Src/main.c.obj.d"

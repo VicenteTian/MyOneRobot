@@ -152,29 +152,29 @@ Core/Src/MPU6050.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\code.elf.dir\build.make CMakeFiles/code.elf.dir/Core/Src/MPU6050.c.s
 .PHONY : Core/Src/MPU6050.c.s
 
-Core/Src/N20Motor.obj: Core/Src/N20Motor.c.obj
-.PHONY : Core/Src/N20Motor.obj
+Core/Src/Motor.obj: Core/Src/Motor.c.obj
+.PHONY : Core/Src/Motor.obj
 
 # target to build an object file
-Core/Src/N20Motor.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\code.elf.dir\build.make CMakeFiles/code.elf.dir/Core/Src/N20Motor.c.obj
-.PHONY : Core/Src/N20Motor.c.obj
+Core/Src/Motor.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\code.elf.dir\build.make CMakeFiles/code.elf.dir/Core/Src/Motor.c.obj
+.PHONY : Core/Src/Motor.c.obj
 
-Core/Src/N20Motor.i: Core/Src/N20Motor.c.i
-.PHONY : Core/Src/N20Motor.i
+Core/Src/Motor.i: Core/Src/Motor.c.i
+.PHONY : Core/Src/Motor.i
 
 # target to preprocess a source file
-Core/Src/N20Motor.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\code.elf.dir\build.make CMakeFiles/code.elf.dir/Core/Src/N20Motor.c.i
-.PHONY : Core/Src/N20Motor.c.i
+Core/Src/Motor.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\code.elf.dir\build.make CMakeFiles/code.elf.dir/Core/Src/Motor.c.i
+.PHONY : Core/Src/Motor.c.i
 
-Core/Src/N20Motor.s: Core/Src/N20Motor.c.s
-.PHONY : Core/Src/N20Motor.s
+Core/Src/Motor.s: Core/Src/Motor.c.s
+.PHONY : Core/Src/Motor.s
 
 # target to generate assembly for a file
-Core/Src/N20Motor.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\code.elf.dir\build.make CMakeFiles/code.elf.dir/Core/Src/N20Motor.c.s
-.PHONY : Core/Src/N20Motor.c.s
+Core/Src/Motor.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\code.elf.dir\build.make CMakeFiles/code.elf.dir/Core/Src/Motor.c.s
+.PHONY : Core/Src/Motor.c.s
 
 Core/Src/UART.obj: Core/Src/UART.c.obj
 .PHONY : Core/Src/UART.obj
@@ -223,6 +223,30 @@ Core/Src/adc.s: Core/Src/adc.c.s
 Core/Src/adc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\code.elf.dir\build.make CMakeFiles/code.elf.dir/Core/Src/adc.c.s
 .PHONY : Core/Src/adc.c.s
+
+Core/Src/debug.obj: Core/Src/debug.c.obj
+.PHONY : Core/Src/debug.obj
+
+# target to build an object file
+Core/Src/debug.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\code.elf.dir\build.make CMakeFiles/code.elf.dir/Core/Src/debug.c.obj
+.PHONY : Core/Src/debug.c.obj
+
+Core/Src/debug.i: Core/Src/debug.c.i
+.PHONY : Core/Src/debug.i
+
+# target to preprocess a source file
+Core/Src/debug.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\code.elf.dir\build.make CMakeFiles/code.elf.dir/Core/Src/debug.c.i
+.PHONY : Core/Src/debug.c.i
+
+Core/Src/debug.s: Core/Src/debug.c.s
+.PHONY : Core/Src/debug.s
+
+# target to generate assembly for a file
+Core/Src/debug.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\code.elf.dir\build.make CMakeFiles/code.elf.dir/Core/Src/debug.c.s
+.PHONY : Core/Src/debug.c.s
 
 Core/Src/dma.obj: Core/Src/dma.c.obj
 .PHONY : Core/Src/dma.obj
@@ -964,15 +988,18 @@ help:
 	@echo ... Core/Src/MPU6050.obj
 	@echo ... Core/Src/MPU6050.i
 	@echo ... Core/Src/MPU6050.s
-	@echo ... Core/Src/N20Motor.obj
-	@echo ... Core/Src/N20Motor.i
-	@echo ... Core/Src/N20Motor.s
+	@echo ... Core/Src/Motor.obj
+	@echo ... Core/Src/Motor.i
+	@echo ... Core/Src/Motor.s
 	@echo ... Core/Src/UART.obj
 	@echo ... Core/Src/UART.i
 	@echo ... Core/Src/UART.s
 	@echo ... Core/Src/adc.obj
 	@echo ... Core/Src/adc.i
 	@echo ... Core/Src/adc.s
+	@echo ... Core/Src/debug.obj
+	@echo ... Core/Src/debug.i
+	@echo ... Core/Src/debug.s
 	@echo ... Core/Src/dma.obj
 	@echo ... Core/Src/dma.i
 	@echo ... Core/Src/dma.s
