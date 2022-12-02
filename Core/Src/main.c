@@ -97,6 +97,7 @@ int main(void)
   MX_TIM3_Init();
   MX_DMA_Init();
   MX_TIM4_Init();
+  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
     RetargetInit(&huart3);
     OLED_Init();
@@ -120,18 +121,18 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
        // MPU_test();
-        //Motor_test();
+        Motor_test();
         get_key();
         UART_ctrl();
-        mpu_dmp_get_data(&var_MPU6050[0], &var_MPU6050[1], &var_MPU6050[2]);//获取陀螺仪姿态数据
-        MPU_Get_Gyroscope(&var_MPUgyr[0],&var_MPUgyr[1],&var_MPUgyr[2]);////获取陀螺仪角速度数据
+        mpu_dmp_get_data(&var_MPU6050[0], &var_MPU6050[1], &var_MPU6050[2]);
+        MPU_Get_Gyroscope(&var_MPUgyr[0],&var_MPUgyr[1],&var_MPUgyr[2]);
         //vcan_sendware((uint8_t *)var_MPUgyr, sizeof(var_MPUgyr));
         if (time_count > 5) {
             time_count = 0;
             get_Encoder();
             MPU_data_show(var_MPU6050);
-            //Pitch_balance_ctrl(var_MPU6050[0],var_MPUgyr[1]);
-            Roll_balance_ctrl(var_MPU6050[1],var_MPUgyr[0]);
+            //Pitch_balance_ctrl((int16_t)0,var_MPU6050[0],var_MPUgyr[1]);
+            //Roll_balance_ctrl((int16_t)0,var_MPU6050[1],var_MPUgyr[0]);
         }
     }
   /* USER CODE END 3 */
@@ -190,7 +191,7 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 void HAL_SYSTICK_Callback(void)
 {
-    // �??1ms自动增一
+    // �???1ms自动增一
     time_count++;
 
 }

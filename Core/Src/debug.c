@@ -22,15 +22,16 @@ void UART_ctrl(void) {
         is_message = 0;
         switch (Receive_COM) {
             case 's':
-                HAL_GPIO_WritePin(GPIOB, STBY_Pin | EN_Pin, GPIO_PIN_RESET);//两个电机失能
+                HAL_GPIO_WritePin(GPIOB, EN2_Pin | EN_Pin, GPIO_PIN_RESET);//两个电机失能
                 break;
             case 'e':
                 Motor_Pitch.PWM = 0;
                 Motor_Roll.PWM = 0;
-                HAL_GPIO_WritePin(GPIOB, STBY_Pin | EN_Pin, GPIO_PIN_SET);//两个电机使能
+                HAL_GPIO_WritePin(GPIOB, EN2_Pin | EN_Pin, GPIO_PIN_SET);//两个电机使能
                 break;
             case 'a':
                 Motor_Pitch.PWM += 100;//电机加速
+                OLED_ShowNumber(48, 6, Motor_Pitch.PWM, 4, 12);
                 break;
             case '1':
                 Motor_Roll.PWM += 100;
@@ -108,8 +109,6 @@ void MPU_data_show(float *var_MPU6050) {
     OLED_Float(3, 48, MPU_Get_Temperature(), 2);
 }
 void Motor_test(void) {
-    //Motor_Pitch.PWM = 0;
-    //Motor_Roll.PWM = 0;
     //get_key();
     Motor_Ctrl(&Motor_Pitch);
     Motor_Ctrl(&Motor_Roll);

@@ -57,19 +57,20 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define PWM2_Pin GPIO_PIN_0
+#define PWM2_GPIO_Port GPIOA
 #define pwr_check_Pin GPIO_PIN_4
 #define pwr_check_GPIO_Port GPIOA
 #define Green_Pin GPIO_PIN_5
 #define Green_GPIO_Port GPIOA
 #define Motor_Pitch_Encoder_A_Pin GPIO_PIN_6
 #define Motor_Pitch_Encoder_A_GPIO_Port GPIOA
-#define Motor_Pitch_Encoder_A_EXTI_IRQn EXTI9_5_IRQn
 #define Motor_Pitch_Encoder_B_Pin GPIO_PIN_7
 #define Motor_Pitch_Encoder_B_GPIO_Port GPIOA
-#define BIN2_Pin GPIO_PIN_0
-#define BIN2_GPIO_Port GPIOB
-#define BIN1_Pin GPIO_PIN_1
-#define BIN1_GPIO_Port GPIOB
+#define DIR2_Pin GPIO_PIN_0
+#define DIR2_GPIO_Port GPIOB
+#define EN2_Pin GPIO_PIN_1
+#define EN2_GPIO_Port GPIOB
 #define K3_Pin GPIO_PIN_2
 #define K3_GPIO_Port GPIOB
 #define K2_Pin GPIO_PIN_12
@@ -78,8 +79,6 @@ void Error_Handler(void);
 #define EN_GPIO_Port GPIOB
 #define DIR_Pin GPIO_PIN_14
 #define DIR_GPIO_Port GPIOB
-#define STBY_Pin GPIO_PIN_15
-#define STBY_GPIO_Port GPIOB
 #define PWM_Pin GPIO_PIN_8
 #define PWM_GPIO_Port GPIOA
 #define Red_Pin GPIO_PIN_15

@@ -20,12 +20,12 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
-  "../Core/Inc"
-  "../Core/eMPL"
-  "../Drivers/STM32F1xx_HAL_Driver/Inc"
-  "../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
-  "../Drivers/CMSIS/Device/ST/STM32F1xx/Include"
-  "../Drivers/CMSIS/Include"
+  "E:/files/project/one_robot/code/Core/Inc"
+  "E:/files/project/one_robot/code/Core/eMPL"
+  "E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc"
+  "E:/files/project/one_robot/code/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
+  "E:/files/project/one_robot/code/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
+  "E:/files/project/one_robot/code/Drivers/CMSIS/Include"
   )
 
 # The set of dependency files which are needed:

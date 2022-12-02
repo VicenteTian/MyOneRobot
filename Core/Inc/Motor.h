@@ -6,13 +6,13 @@
 #define CODE_MOTOR_H
 #include "tim.h"
 
-#define MAX_PWM_Duty 1000//控制电机的最大占空比
+#define MAX_PWM_Duty 999//控制电机的最大占空比
 
 #define MOTOR_ID_PITCH 0//俯仰轮电机ID号
 #define MOTOR_ID_ROLL 1//动量轮电机ID号
 
-#define M_ROLL_MAX_Speed 110//动量轮电机最大速度限定，防止失控时转速过高伤人
-#define M_PITCH_MAX_Speed 150
+#define M_ROLL_MAX_Speed 230//动量轮电机最大速度限定，防止失控时转速过高伤人
+#define M_PITCH_MAX_Speed 160
 //电机结构体
 typedef struct
 {
@@ -25,7 +25,7 @@ typedef struct
 void Motor_Init(void);
 void get_Encoder(void);
 void Motor_Ctrl(Motor_TypeDef *motor) ;
-void Roll_balance_ctrl(int16_t angle,int16_t gyro);
-void Pitch_balance_ctrl(int16_t angle,int16_t gyro );
+void Roll_balance_ctrl(int16_t balanceAngle,int16_t angle,int16_t gyro);
+void Pitch_balance_ctrl(int16_t balanceAngle,int16_t angle,int16_t gyro );
 
 #endif //CODE_MOTOR_H
