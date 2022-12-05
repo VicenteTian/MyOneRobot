@@ -103,12 +103,9 @@ int main(void)
     OLED_Init();
     OLED_Clear();
     Motor_Init();
-
-    HAL_ADCEx_Calibration_Start(&hadc1);
-    //HAL_ADC_Start_DMA(&hadc1, (uint32_t *) &var_Encode[0], 1);
-    mpu_dmp_init();
+    //mpu_dmp_init();
     OLED_ShowString(0, 0, (uint8_t *) "Wait 3s....:", 12);
-    HAL_Delay(3000);
+    //HAL_Delay(3000);
     OLED_Clear();
     OLED_show();
 
@@ -131,6 +128,7 @@ int main(void)
             time_count = 0;
             get_Encoder();
             MPU_data_show(var_MPU6050);
+            get_bat_vol();
             //Pitch_balance_ctrl((int16_t)0,var_MPU6050[0],var_MPUgyr[1]);
             //Roll_balance_ctrl((int16_t)0,var_MPU6050[1],var_MPUgyr[0]);
         }

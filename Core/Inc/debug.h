@@ -14,4 +14,5 @@ void OLED_show(void );
 void UART_ctrl(void);
 void MPU_data_show(float *var_MPU6050);
 void Motor_test(void);
+void get_bat_vol(void);
 #endif //CODE_DEBUG_H

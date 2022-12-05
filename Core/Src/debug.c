@@ -8,6 +8,7 @@
 extern Motor_TypeDef Motor_Pitch;
 extern Motor_TypeDef Motor_Roll;
 extern __IO uint16_t time_count; // 时间计数，每1ms增加一(与滴答定时器频率有关)
+extern ADC_HandleTypeDef hadc1;
 uint8_t Receive_COM = 0;
 uint8_t is_message = 0;
 
@@ -112,4 +113,22 @@ void Motor_test(void) {
     //get_key();
     Motor_Ctrl(&Motor_Pitch);
     Motor_Ctrl(&Motor_Roll);
+}
+void get_bat_vol(void)
+{
+    static uint32_t temp_val=0;
+    static uint8_t i=0;
+    if (i<10)
+    {
+        HAL_ADC_Start(&hadc1);
+        HAL_ADC_PollForConversion(&hadc1, 100);
+        temp_val += HAL_ADC_GetValue(&hadc1);
+    }
+    else
+    {
+        OLED_Float(6, 48,temp_val/10*0.0035671 , 2);
+        i=0;
+        temp_val=0;
+    }
+    ++i;
 }
